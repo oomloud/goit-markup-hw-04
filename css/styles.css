@@ -1,0 +1,381 @@
+:root {
+  /* Colors */
+  --primaryBrandColor: #4d5ae5;
+  --textColor: #434455;
+  --darkColor: #2e2f42;
+  --pressedStateColor: #404bbf;
+  --accentColor: #e7e9fc;
+  --lightBackgroundColor: #f4f4fd;
+  --bodyColor: #fff;
+}
+
+html {
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em; /* 24/16 */
+  letter-spacing: 0.02em;
+  color: var(--textColor);
+  background-color: var(--bodyColor);
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Generic styles */
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+.section-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11em; /* 40/36 */
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--darkColor);
+}
+
+.subheader {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: var(--darkColor);
+  margin-bottom: 8px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: var(--textColor);
+}
+
+.section {
+  padding: 0 0 120px 0;
+}
+
+.section-dp {
+  padding: 120px 0;
+}
+
+.section-accent {
+  background-color: var(--lightBackgroundColor);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+/* Header */
+.main-header {
+  border-bottom: 1px solid var(--accentColor);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-header {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+a.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primaryBrandColor);
+  line-height: 1.17em; /* 21/18 */
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin: 0 76px 0 0;
+}
+
+.logo-studio {
+  color: var(--darkColor);
+}
+
+.logo-studio-dark {
+  color: var(--lightBackgroundColor);
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+
+/* Menu */
+.menu {
+  padding: 0;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--darkColor);
+  padding: 24px 0;
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.menu-item:active {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--pressedStateColor);
+}
+
+/* Contacts */
+
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.contacts {
+  text-indent: 0;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+.contact:hover,
+.contact:focus {
+  text-decoration: none;
+  color: var(--pressedStateColor);
+}
+
+/* Section 1 - Hero */
+
+.hero {
+  background-color: var(--darkColor);
+  width: 100%;
+  padding: 188px 0;
+}
+
+.hero-header {
+  font-size: 56px;
+  color: var(--bodyColor);
+  line-height: 1.07em; /* 60/56 */
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto 48px;
+  padding: 0;
+}
+
+/* Button - Main page */
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  color: var(--bodyColor);
+  font-weight: 500;
+
+  background-color: var(--primaryBrandColor);
+  padding: 16px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 169px;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--bodyColor);
+  background-color: var(--pressedStateColor);
+}
+
+/* Section 2 - Features */
+.features {
+  padding: 0;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+.features-item {
+  width: 264px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+/* Section 3 - Services */
+.services {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+.services-header {
+  margin-bottom: 72px;
+}
+
+.services-item {
+  width: calc(100%-3 * 16px);
+}
+
+/* Section 4 - Team */
+.team {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+.team-header {
+  margin-bottom: 72px;
+}
+
+.team-item {
+  background-color: var(--bodyColor);
+  width: 264px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding: 0;
+}
+
+.team-item-text {
+  text-align: center;
+  padding: 32px 16px;
+  border-radius: 0 0 4px 4px;
+}
+
+.team-item-text > .subheader {
+  margin-top: 0;
+}
+
+.team-item-text > .paragraph {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--darkColor);
+  padding: 100px 0 100px 0;
+}
+
+.footer a {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-paragraph {
+  color: var(--lightBackgroundColor);
+  max-width: 264px;
+}
+
+/*****************************/
+/* Portfolio page — Filters */
+.filters {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 0 0 72px 0;
+}
+
+.filter-button {
+  background-color: var(--lightBackgroundColor);
+  border: 1px solid var(--accentColor);
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  color: var(--primaryBrandColor);
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-button:active,
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--pressedStateColor);
+  color: var(--bodyColor);
+  border: 1px solid transparent;
+}
+
+/* Portfolio */
+
+.section-portfolio {
+  padding: 96px 0 120px 0;
+}
+
+.portfolio {
+  display: flex;
+  gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.portfolio-item {
+  background-color: var(--bodyColor);
+  width: 360px;
+  text-align: left;
+}
+
+.portfolio-item-text {
+  padding: 32px 16px;
+  border: 1px solid var(--accentColor);
+  border-top: none;
+}
+
+.portfolio-item-text > .subheader {
+  margin: 0 0 8px 0;
+}
+
+.portfolio-item-text > .paragraph {
+  margin-bottom: 0;
+}
