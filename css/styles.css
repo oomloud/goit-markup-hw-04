@@ -7,6 +7,7 @@
   --accentColor: #e7e9fc;
   --lightBackgroundColor: #f4f4fd;
   --bodyColor: #fff;
+  --backgroundOverlayColor: rgba(46, 47, 66, 0.7);
 }
 
 html {
@@ -145,16 +146,15 @@ a.logo {
   margin: 0;
 }
 
-.menu-item {
-  text-decoration: none;
+.menu-link {
   font-weight: 500;
   color: var(--darkColor);
   padding: 24px 0;
 }
 
-.menu-item:hover,
-.menu-item:focus,
-.menu-item:active {
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
   text-decoration: none;
   font-weight: 500;
   color: var(--pressedStateColor);
@@ -190,7 +190,27 @@ a.logo {
 .hero {
   background-color: var(--darkColor);
   width: 100%;
+  max-width: 1440px;
   padding: 188px 0;
+  margin: auto;
+  background-image: linear-gradient(
+      to right,
+      var(--backgroundOverlayColor),
+      var(--backgroundOverlayColor)
+    ),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hero-overlay {
+  height: 100%;
+  padding: 0 0;
+  background-image: url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .hero-header {
@@ -344,6 +364,9 @@ a.logo {
   background-color: var(--pressedStateColor);
   color: var(--bodyColor);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* Portfolio */
@@ -364,6 +387,13 @@ a.logo {
   background-color: var(--bodyColor);
   width: 360px;
   text-align: left;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  border: -1px solid var(--lightBackgroundColor);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item-text {
