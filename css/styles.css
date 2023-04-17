@@ -269,6 +269,34 @@ a.logo {
   margin-right: 0;
 }
 
+.features-item::before {
+  content: '';
+  display: block;
+  height: 112px;
+  background-color: var(--lightBackgroundColor);
+  border-radius: 4px;
+  background-size: auto 64px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 8px;
+}
+
+.icon-strategy::before {
+  background-image: url(../images/02_features/01_antenna.svg);
+}
+
+.icon-punctuality::before {
+  background-image: url(../images/02_features/02_clock.svg);
+}
+
+.icon-diligence::before {
+  background-image: url(../images/02_features/03_diagram.svg);
+}
+
+.icon-technology::before {
+  background-image: url(../images/02_features/04_astronaut.svg);
+}
+
 /* Section 3 - Services */
 .services {
   display: flex;
