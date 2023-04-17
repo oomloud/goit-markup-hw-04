@@ -8,6 +8,7 @@
   --lightBackgroundColor: #f4f4fd;
   --bodyColor: #fff;
   --backgroundOverlayColor: rgba(46, 47, 66, 0.7);
+  --lightSlateColor: #8e8f99;
 }
 
 html {
@@ -315,6 +316,39 @@ a.logo {
 
 .team-item-text > .paragraph {
   margin-bottom: 0;
+}
+
+/* Section 5 - Customers */
+.customers-header {
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.customers-list-item {
+  width: calc((100% - (24px * 5)) / 6);
+  height: 88px;
+}
+
+.customers-list-link {
+  background-color: transparent;
+  border: 1px solid var(--lightSlateColor);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: var(--lightSlateColor);
 }
 
 /* Footer */
