@@ -97,6 +97,22 @@ p {
   padding: 0 15px 0 15px;
 }
 
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: var(--primaryBrandColor);
+  border-radius: 50% 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--pressedStateColor);
+}
+
 /* Header */
 .main-header {
   border-bottom: 1px solid var(--accentColor);
@@ -385,22 +401,6 @@ a.logo {
   width: 40px;
 }
 
-.team-social-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  background-color: var(--primaryBrandColor);
-  border-radius: 50% 50%;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--pressedStateColor);
-}
-
 .team-social-svg {
   width: 16px;
   height: 16px;
@@ -433,12 +433,19 @@ a.logo {
   align-items: center;
   justify-content: center;
   height: 100%;
+  color: var(--lightSlateColor);
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border: 1px solid var(--pressedStateColor);
+  color: var(--pressedStateColor);
 }
 
 .customers-icon {
   width: 104px;
   height: 56px;
-  fill: var(--lightSlateColor);
+  fill: currentColor;
 }
 
 /* Footer */
@@ -447,14 +454,57 @@ a.logo {
   padding: 100px 0 100px 0;
 }
 
-.footer a {
+.footer-container {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.footer-logo {
+  max-width: 264px;
+  margin-right: 120px;
+}
+
+.footer-logo > a {
   display: inline-block;
   margin-bottom: 16px;
 }
 
 .footer-paragraph {
   color: var(--lightBackgroundColor);
+}
+
+.footer-social {
   max-width: 264px;
+}
+
+.footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: var(--bodyColor);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+  justify-content: center;
+}
+
+.footer-social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+}
+
+.team-social-svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--lightBackgroundColor);
 }
 
 /*****************************/
