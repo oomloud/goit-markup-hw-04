@@ -9,6 +9,7 @@
   --bodyColor: #fff;
   --backgroundOverlayColor: rgba(46, 47, 66, 0.7);
   --lightSlateColor: #8e8f99;
+  --successColor: #31d0aa;
 }
 
 html {
@@ -111,6 +112,10 @@ p {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--pressedStateColor);
+}
+
+.social-svg {
+  fill: var(--lightBackgroundColor);
 }
 
 /* Header */
@@ -401,12 +406,6 @@ a.logo {
   width: 40px;
 }
 
-.team-social-svg {
-  width: 16px;
-  height: 16px;
-  fill: var(--lightBackgroundColor);
-}
-
 /* Section 5 - Customers */
 .customers-header {
   margin-bottom: 72px;
@@ -484,6 +483,7 @@ a.logo {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: var(--bodyColor);
+  margin-bottom: 16px;
 }
 
 .footer-social-list {
@@ -491,6 +491,7 @@ a.logo {
   gap: 16px;
   align-items: start;
   justify-content: center;
+  margin: 0;
 }
 
 .footer-social-icon {
@@ -501,10 +502,8 @@ a.logo {
   width: 40px;
 }
 
-.team-social-svg {
-  width: 24px;
-  height: 24px;
-  fill: var(--lightBackgroundColor);
+.footer-social-link:hover {
+  background-color: var(--successColor);
 }
 
 /*****************************/
