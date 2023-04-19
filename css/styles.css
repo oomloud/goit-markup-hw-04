@@ -100,6 +100,8 @@ p {
 /* Header */
 .main-header {
   border-bottom: 1px solid var(--accentColor);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -195,9 +197,8 @@ a.logo {
   padding: 188px 0;
   margin: auto;
   background-image: linear-gradient(
-      to right,
-      var(--backgroundOverlayColor),
-      var(--backgroundOverlayColor)
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
@@ -269,7 +270,24 @@ a.logo {
   margin-right: 0;
 }
 
-.features-item::before {
+.features-icon {
+  display: flex;
+  height: 112px;
+  background-color: var(--lightBackgroundColor);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-icon-svg {
+  width: 64px;
+  height: 64px;
+}
+
+/* Pseudoclass solution. Unfortunately such option is not accepted by autocheck :( */
+
+/* .features-item::before {
   content: '';
   display: block;
   height: 112px;
@@ -279,7 +297,7 @@ a.logo {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-bottom: 8px;
-}
+} 
 
 .icon-strategy::before {
   background-image: url(../images/02_features/01_antenna.svg);
@@ -296,6 +314,7 @@ a.logo {
 .icon-technology::before {
   background-image: url(../images/02_features/04_astronaut.svg);
 }
+*/
 
 /* Section 3 - Services */
 .services {
@@ -349,6 +368,7 @@ a.logo {
 /* Section 5 - Customers */
 .customers-header {
   margin-bottom: 72px;
+  line-height: 1.1em;
 }
 
 .customers-list {
