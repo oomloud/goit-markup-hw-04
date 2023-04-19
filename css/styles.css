@@ -502,7 +502,8 @@ a.logo {
   width: 40px;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--successColor);
 }
 
