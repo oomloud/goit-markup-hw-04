@@ -380,21 +380,17 @@ a.logo {
 
 .team-item-text > .subheader {
   margin-top: 0;
-  margin-right: 16px;
-  margin-left: 16px;
 }
 
 .team-item-text > .paragraph {
   margin-bottom: 0;
-  margin-right: 16px;
-  margin-left: 16px;
 }
 
 .team-item-social {
   display: flex;
   gap: 24px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 8px 16px 0;
 }
 
